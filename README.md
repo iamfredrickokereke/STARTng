@@ -1,2 +1,2 @@
 # STARTng
-Repo for Startng 2020
+Learnings for Csharp lectures during the startng program
