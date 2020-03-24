@@ -55,6 +55,10 @@ Makefile
 *.cache
 *.props
 *.targets
+*.dll
+*.pdb
 
 bin/
 obj/
+\bin
+\obj
