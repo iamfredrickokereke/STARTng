@@ -12,7 +12,7 @@ namespace Variables
 
             System.Console.WriteLine("*************************************");
 
-            System.Console.WriteLine("This is a simple subtraction program");
+            System.Console.WriteLine("This is a simple Division program");
 
             System.Console.WriteLine();
 
@@ -25,9 +25,11 @@ namespace Variables
             System.Console.Write("Please enter your second number : ");
             secondnumber = int.Parse(Console.ReadLine());
             
-            result = firstnumber - secondnumber;
+            result = firstnumber / secondnumber;
 
-            System.Console.WriteLine(" After Subtraction the result is " + result);
+            System.Console.WriteLine();
+
+            System.Console.WriteLine("After Division the result is " + result);
 
         }
     }
