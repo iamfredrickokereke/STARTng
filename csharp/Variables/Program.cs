@@ -6,21 +6,25 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            int firstnumber = 0;
-            int secondnumber = 0;
+            int firstNumber = 0;
+            int secondNumber = 0;
+            int thirdNumber = 0;
             int result =  0;
 
 
-            Console.Write("Please enter your first number : ");
-            firstnumber = int.Parse(Console.ReadLine());
+            System.Console.Write("Please enter your first number : ");
+            firstNumber = int.Parse(Console.ReadLine());
 
             
             System.Console.Write("Please enter your second number : ");
-            secondnumber = int.Parse(Console.ReadLine());
-            
-            result = firstnumber + secondnumber;
+            secondNumber = int.Parse(Console.ReadLine());
 
-            System.Console.WriteLine(" The result is " + result);
+            System.Console.Write("Please enter your third number : ");
+            thirdNumber = int.Parse(Console.ReadLine());
+            
+            result = firstNumber * secondNumber * thirdNumber;
+
+            System.Console.WriteLine(" After Multiplication the result is " + result);
         }
     }
 }
