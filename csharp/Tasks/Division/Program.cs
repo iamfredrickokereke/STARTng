@@ -9,13 +9,13 @@ namespace Division
             // Declare and initialize the variables
             int firstnumber = 0;   int secondnumber = 0;   int result =  0;
 
-            // Output a beautiful * line demacator.
+            // Display a beautiful * line demacator.
             System.Console.WriteLine("*************************************");
 
             // Display Program title
             System.Console.WriteLine("This is a simple Division program");
 
-            // Output a beautiful * line demacator.
+            // Display a beautiful * line demacator.
             System.Console.WriteLine("*************************************");
 
             // Ask user for the first input
