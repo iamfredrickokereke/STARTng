@@ -9,10 +9,6 @@ var app = http
                     response.writeHead(200, {"Content-type" : "text/html"});
                     readStream.pipe(response);
 
-                     // if (request.url == '/')
-                    //response.end("Welcome to my site!");
-
-                    
                     if(request.url == '/message'){
 
                         response.end("File submitted");
@@ -30,4 +26,4 @@ var app = http
                     }
                     
                 })
-                .listen(5000);
+                .listen(7500);
