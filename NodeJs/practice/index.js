@@ -13,12 +13,13 @@ const app = http
                    response.writeHead(200, {"Content-type" : "text/html"});
                    readStream.pipe(response);
 
+                   //  check visited route and respond
                    if(request.url == '/message'){
 
                    response.end("File submitted");
-
+                   // Store form data
                    var data = request.body;
-
+                   // check data and write to new file
                    request.on("data", function(data) {
                             var decodedData = decodeURI(data)
                                 .replace(/\+/, " ")
@@ -30,5 +31,5 @@ const app = http
                     }
                 
                 })
-            
+            // server running port
             .listen(8080);
