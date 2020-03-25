@@ -1,29 +1,34 @@
-var http = require('http');
-var fs = require('fs');
+// import core http and file system core modules 
 
+const http = require('http');
+const fs = require('fs');
 
-var app = http
-                .createServer( function(request,response){
+// create server and listen on port 8080
 
-                    var readStream = fs.createReadStream('./index.html');
-                    response.writeHead(200, {"Content-type" : "text/html"});
-                    readStream.pipe(response);
+const app = http
+               .createServer( function(request,response){
 
-                    if(request.url == '/message'){
+                   // Create read stream to read file from path
+                   var readStream = fs.createReadStream('./index.html');
+                   response.writeHead(200, {"Content-type" : "text/html"});
+                   readStream.pipe(response);
 
-                        response.end("File submitted");
+                   if(request.url == '/message'){
 
-                        var data = request.body;
+                   response.end("File submitted");
 
-                        request.on("data", function(data) {
-                                var decodedData = decodeURI(data)
-                                  .replace(/\+/, " ")
-                                  .replace("message=", "");
-                                fs.writeFile("./message.txt", decodedData, function(err) {
-                                  if (err) throw err;
-                                });
-                              });
+                   var data = request.body;
+
+                   request.on("data", function(data) {
+                            var decodedData = decodeURI(data)
+                                .replace(/\+/, " ")
+                                .replace("message=", "");
+                            fs.writeFile("./message.txt", decodedData, function(err) {
+                                if (err) throw err;
+                            });
+                            });
                     }
-                    
+                
                 })
-                .listen(7500);
+            
+            .listen(8080);
