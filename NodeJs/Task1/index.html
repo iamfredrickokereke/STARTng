@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+  /*fonts*/
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic);
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+html, body{
+  background:#2F1E27;
+}
+
+body{
+  counter-reset:section;
+  text-align:center;
+}
+
+.container{
+  position:relative;
+  top:100px;
+}
+
+.container h1, .container span{
+  font-family:"Pt Sans", helvetica, sans-serif;
+}
+
+.container h1{
+  text-align:center;
+  color:#fff;
+  font-weight:100;
+  font-size:2em; 
+  margin-bottom:10px;
+}
+
+.container h2{
+  font-family:"droid serif";
+  font-style:italic;
+  color:#d3b6ca; 
+  text-align:center;
+  font-size:1.2em;
+}
+
+
+form{
+  margin-top:25px;
+  display:inline-block;
+}
+
+.fields{
+  border-left:2px solid #4c2639
+}
+
+
+
+input{
+  border: 1px solid #4c2630;
+  outline:none;
+  display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  position:relative;
+  bottom:14px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+}
+
+button{ 
+  background-color:ivory;
+  font: x-large;
+  border-radius: 10px;
+  border: 1px solid #4c2630;
+  padding: 0 10px;
+  height: 30px;  
+  width:100px;
+  cursor:pointer;
+}
+
+button:hover{
+  background-color: #4c2639;
+  color: #fff;
+  font: 200;
+
+}
+
+  </style>
+  <title>Simple Message Form</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>It's now or never</h2>
+    <h1>Send me a message, Express your love, and i will save it!</h1>
+    
+    <form action="/message" id="join-us" method="POST">
+      <div class="fields">
+        <span>
+         <input placeholder="Type message" type="text" autocomplete="off" name="form"/>
+        </span>
+      </div>
+      <div class="submit">
+        <button>Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
