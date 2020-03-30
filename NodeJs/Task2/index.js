@@ -26,12 +26,3 @@ MongoClient.connect( url, {useNewUrlParser: true, useUnifiedTopology: true}, fun
 
 });
 
-
-
-
- 
-// make client connect to mongo service
-MongoClient.connect(url, function(err, db) {
-    if (err) throw err;
-    
-});
