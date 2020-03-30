@@ -17,7 +17,7 @@ MongoClient.connect( url, {useNewUrlParser: true, useUnifiedTopology: true}, fun
 
   // Print to Console status.
 
-  console.log("Database created! by " + Admin);
+  console.log("Database created by " + Admin);
 
   // close connection to db
  
