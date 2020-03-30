@@ -4,7 +4,7 @@
 
 ### TODO:
 - [x] Sign up
-- [] Close
+- [ ] Close
 
 
 > Section 2 :joy:
