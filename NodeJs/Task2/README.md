@@ -1,3 +1,3 @@
 ##Check this image
 
-<img src="./images/screen1.png" alt="Task One" />
+<img src="./images/screen1.PNG" alt="Task One" />
