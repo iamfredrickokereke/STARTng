@@ -1,13 +1,13 @@
-##Check this image
+## Check this image
 
 <img src="./images/screen1.PNG" alt="Task One" />
 
 ### TODO:
-- ([x]) Sign up
-- ([]) Close
+- [x] Sign up
+- [] Close
 
 
-> Section 2 :Joy:
+> Section 2 :joy:
 
 
 ```javascript
