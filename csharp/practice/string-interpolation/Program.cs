@@ -6,7 +6,10 @@ namespace string_interpolation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           string afriend = "Belrah";
+           string name = "fred";
+
+           System.Console.WriteLine($"Hello {afriend}, my name is {name}");
         }
     }
 }
