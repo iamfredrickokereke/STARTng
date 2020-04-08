@@ -32,7 +32,7 @@ function interestCalculator(array) {
         }
 
 
-        let interest = (array[index].principal * rate * time) / 100;
+        let interest = (array[index].principal * array[index].rate * array[index].time) / 100;
 
     }    
 
