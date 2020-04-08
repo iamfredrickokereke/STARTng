@@ -52,4 +52,6 @@ function interestCalculator(data) {
     return interestData;
     
 }
+
+// calling the function
 interestCalculator(data);
