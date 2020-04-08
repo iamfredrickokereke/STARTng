@@ -13,5 +13,24 @@ let data=[
 // creating the function
 
 function interestCalculator(array) {
-    
-}
+   
+    for (let index = 0; index < array.length; index++) {
+        if(array[index].principal >= 2500 && array[index].time > 1 && array[index].time < 3 )
+        {
+            rate = 3;
+        } 
+
+        else if (array[index].principal >= 2500 && array[index].time >= 3 ) {
+            rate = 4;
+        }
+
+        else if (array[index].principal >= 2500 || array[index].time <= 1 ) {
+            rate = 2;
+        }
+        else{
+            rate = 1;
+        }
+
+    }    
+
+}    
