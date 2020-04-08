@@ -31,6 +31,9 @@ function interestCalculator(array) {
             rate = 1;
         }
 
+
+        let interest = (array[index].principal * rate * time) / 100;
+
     }    
 
 }    
