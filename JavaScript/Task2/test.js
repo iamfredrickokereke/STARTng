@@ -34,6 +34,23 @@ function interestCalculator(array) {
 
         let interest = (array[index].principal * array[index].rate * array[index].time) / 100;
 
+        let interestData = [];
+
+        interestData.push(
+                {
+                principal: array[index].Principal,
+                rate: rate,
+                time: array[index].time,
+                interest: interest
+                }
+        )
+
     }    
 
+    console.log(interestData);
+
+	return interestData;
+
 }    
+
+interestCalculator()
