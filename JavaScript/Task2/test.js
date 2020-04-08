@@ -6,5 +6,12 @@ let data=[
     {principal: "1000", time: "5"},
     {principal: "3000", time: "1"},
     {principal: "2000", time: "3"}
-    
+
 ];
+
+
+// creating the function
+
+function interestCalculator(array) {
+    
+}
