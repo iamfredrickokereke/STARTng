@@ -7,4 +7,14 @@
     box-sizing: border-box;   
     font-family: 'Open Sans', sans-serif; 
  }
+
+ html {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 1.5;
+    overflow: hidden;
+    
+ }
+ 
  
