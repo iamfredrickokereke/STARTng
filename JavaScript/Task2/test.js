@@ -14,6 +14,8 @@ let data=[
 
 function interestCalculator(array) {
    
+    let interestData = [];
+    
     for (let index = 0; index < array.length; index++) {
         if(array[index].principal >= 2500 && array[index].time > 1 && array[index].time < 3 )
         {
@@ -32,13 +34,13 @@ function interestCalculator(array) {
         }
 
 
-        let interest = (array[index].principal * array[index].rate * array[index].time) / 100;
+        let interest = (array[index].principal * rate * array[index].time) / 100;
 
-        let interestData = [];
+        
 
         interestData.push(
                 {
-                principal: array[index].Principal,
+                principal: array[index].principal,
                 rate: rate,
                 time: array[index].time,
                 interest: interest

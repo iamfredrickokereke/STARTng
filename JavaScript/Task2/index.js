@@ -1,57 +1,61 @@
 
 // Array of objects created
-const data=[
+let data=[
+
     {principal: "2500", time: "1.8"},
     {principal: "1000", time: "5"},
     {principal: "3000", time: "1"},
     {principal: "2000", time: "3"}
+
 ];
 
 
-// Function that takes array with single argument
+// creating the function and take arguments of array
 
-function interestCalculator(data) {
+function interestCalculator(array) {
+   
+    //Declare interestData to store array of objects
     let interestData = [];
-    for (let i = 0; i < data.length; i++) {
-        let principal = data[i].principal;
-        let time = data[i].time;
-        if (principal>=2500 && time>1 && time<3) {
-            let rate=3;
-            interest=(principal*rate*time)/100;
+    
+    for (let index = 0; index < array.length; index++) {
 
-            newData={principal:principal, rate:rate, time:time, interest:interest};
-            interestData.push(newData);                    
+        //checking rate applicable
+        if(array[index].principal >= 2500 && array[index].time > 1 && array[index].time < 3 )
+        {
+            rate = 3;
+        } 
+
+        else if (array[index].principal >= 2500 && array[index].time >= 3 ) {
+            rate = 4;
         }
-        else if (principal>=2500 && time>=3) {
-            let rate=4;
-            interest=(principal*rate*time)/100;
 
-            newData={principal:principal, rate:rate, time:time, interest:interest};
-            interestData.push(newData);                    
-        }
-        else if (principal<2500 || time<=1) {
-            let rate=2;
-            interest=(principal*rate*time)/100;
-
-            newData={principal:principal, rate:rate, time:time, interest:interest};
-            interestData.push(newData); 
+        else if (array[index].principal >= 2500 || array[index].time <= 1 ) {
+            rate = 2;
         }
         else{
-            let rate=1;
-            interest=(principal*rate*time)/100;
-
-            newData={principal:principal, rate:rate, time:time, interest:interest};
-            interestData.push(newData);
+            rate = 1;
         }
-    }
 
-    // logging interest data to console
+
+        let interest = (array[index].principal * rate * array[index].time) / 100;
+
+        
+
+        interestData.push(
+                {
+                principal: array[index].principal,
+                rate: rate,
+                time: array[index].time,
+                interest: interest
+                }
+        )
+
+    }    
+
     console.log(interestData);
 
-    // returning the array value from the function
-    return interestData;
-    
-}
+	return interestData;
 
-// calling the function
-interestCalculator(data);
+}    
+
+interestCalculator(data)
