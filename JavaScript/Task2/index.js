@@ -14,8 +14,9 @@ let data=[
 
 function interestCalculator(array) {
    
-    //Declare interestData to store array of objects
+    //Declare interestData  and Rate
     let interestData = [];
+    let rate = 0;
     
     for (let index = 0; index < array.length; index++) {
 
