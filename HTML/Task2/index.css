@@ -13,7 +13,7 @@
     flex-direction: column;
     height: 100%;
     line-height: 1.5;
-    overflow: hidden;
+    overflow-y: hidden;
     
  }
 
@@ -43,13 +43,26 @@ a {
 section {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    padding-top: 3rem;
  }
  
  .logo {
     margin-bottom: 40px;
  }
+
+ 
+.form {
+   margin-bottom: 48px;
+}
+
+.form-body {
+   background: #fff;
+   min-width: 448px;
+   color: #4a5568;
+   padding: 40px 40px 48px;
+   border-radius: 1.25rem;
+   border-bottom-left-radius: 0;
+}
