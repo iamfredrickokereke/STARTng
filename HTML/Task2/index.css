@@ -17,7 +17,7 @@
     
  }
 
- .container {
+ main {
     background-image:    url('./assets/img/bg1.png'),
                          url('./assets/img/bg2.png'), 
                          url('./assets/img/bg3.png'), 
@@ -35,3 +35,21 @@
  }
  
  
+a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+ 
+ .logo {
+    margin-bottom: 40px;
+ }
