@@ -8,6 +8,65 @@
     <title>Piggyvest | Register</title>
 </head>
 <body>
-    <h1>Welcome to piggy investment!</h1>
+    <main class="container">
+        <section class="content">
+
+            <div class="logo">
+               <a href="https://www.piggyvest.com"><img src="./assets/img/logo.svg" alt="Piggybank-Logo"></a>
+            </div>
+            
+            <div class="form">
+               <form action="#" class="form-body">
+                  <div class="form-header">
+                     <h1>Create a Secure Account</h1>
+                     <p>Welcome to the future of Savings & Investments</p>
+                 </div>
+                 <div class="form-fields">
+                  <div class="field">
+                     <label for="name">Full Name</label> <br>
+                     <input type="text" placeholder="Full Name" id="name" required> 
+                  </div>
+                  <div class="field">
+                     <label for="email">Email Address</label> <br>
+                     <input type="email" placeholder="Email Address" id="email" required> 
+                  </div>
+                  <div class="field">
+                     <label for="phone">Phone Number</label> <br>
+                     <input type="text" placeholder="Phone Number" id="number" required> 
+                  </div>
+                  <div class="field">
+                     <label for="password">Password</label> <br>
+                     <input type="password" placeholder="Password" id="password" required> 
+                  </div>
+                  <div class="field">
+                     <label for="referred">Referrer Phone or Promo Code (Optional)</label> <br>
+                     <input type="text" placeholder="Referrer Phone Or Code" id="referred"> 
+                  </div>
+                  <div class="field">
+                        <label for="how">How Did You Hear About Us? (Optional)</label> <br>
+                        <select id="how" name="how" form="reg-form">
+                           <option value="default" selected>Click To Select</option>
+                           <option>Facebook</option>
+                           <option>Twitter</option>
+                           <option>Instagram</option>
+                           <option>Friend/Family/Coworker Referral</option>
+                           <option>Google Search</option>
+                           <option>Google Playstore</option>
+                           <option>Online Blog</option>
+                           <option>Local Newspaper</option>
+                           <option>At An Event</option>
+                           <option>Other</option>
+                        </select>
+                  </div>
+                  <button class="submit-btn" type="submit">
+                     Create Account
+                  </button>
+               </form>
+            </div>
+            <div class="login">
+               <a href="https://dashboard.piggyvest.com/login">Already have an account? Log in</a>
+            </div>
+         </section>
+    </main>
 </body>
 </html>
