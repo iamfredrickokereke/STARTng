@@ -29,6 +29,14 @@ namespace Task2
                 }
             }
 
+
+            if (isThereFood == true){
+                System.Console.WriteLine($"The food is available, and the price is {price.ToString}");
+            }
+            else{
+                System.Console.WriteLine("We are sorry, this food is finished");
+            }
+
         }
     }
 }
