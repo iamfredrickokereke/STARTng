@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System;
 
 namespace Task2
 {
@@ -12,6 +13,14 @@ namespace Task2
             prices[1] = 2000; 
             prices[2] = 3000;
 
+            List<string>  Fruits = new List<string>();
+
+            Fruits.Add("Rice");
+            Fruits.Add("Beans");
+            Fruits.Add("Yam");
+            Fruits.Add("Soup");
+
+
             System.Console.WriteLine("Welcome to Eric's Supermarket...");
             System.Console.WriteLine("Enter an order number");
 
@@ -19,7 +28,7 @@ namespace Task2
             bool isThereFood = false;
             double price = 0;
 
-            for (int index = 0; index < orders.length; index++)
+            for (int index = 0; index < orders.Length; index++)
             {
                 if (orderNumber == orders[index])
                 {
@@ -31,7 +40,7 @@ namespace Task2
 
 
             if (isThereFood == true){
-                System.Console.WriteLine($"The food is available, and the price is {price.ToString}");
+                System.Console.WriteLine("The food is available, and the price is {0}", price.ToString("C"));
             }
             else{
                 System.Console.WriteLine("We are sorry, this food is finished");
