@@ -1,3 +1,4 @@
+import { builtinModules } from "module";
 
 const requestHandler = (request, response) => {
 
@@ -5,3 +6,6 @@ const requestHandler = (request, response) => {
     response.end();
     
 }
+
+
+module.exports = requestHandler;
