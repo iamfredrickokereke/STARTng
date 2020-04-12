@@ -32,7 +32,14 @@ const requestHandler = (request, response) => {
         }
 
         if ( url === "/message" && method === "POST") {
-            
+            const body = [];
+
+            request.on("data", (chunk) => {
+                body.push(chunk);
+
+                console.log(body);
+                
+            })
         }
     response.end();
     
