@@ -22,7 +22,7 @@ const form = `
 
 const requestHandler = (request, response) => {
 
-        
+        response.write(form)
     
     
     response.end();
