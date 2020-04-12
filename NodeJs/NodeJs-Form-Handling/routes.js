@@ -36,11 +36,16 @@ const requestHandler = (request, response) => {
 
             request.on("data", (chunk) => {
                 body.push(chunk);
+                body.toString();
                 
             })
 
             request.on("end", () =>{
-                console.log(body);
+               // console.log(body);
+
+               const parsedBody = Buffer.concat(body)
+               console.log(parsedBody.toString());
+               
             })
         }
     response.end();
