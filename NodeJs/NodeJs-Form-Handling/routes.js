@@ -12,7 +12,7 @@ const form = `
             <body>
                 <form action="/message" method="POST">  
                     <input type="text" name="input-box" id="">
-                    <input type="button" value="Send">
+                    <input type="submit" value="Send">
                 </form>
             </body>
             </html>
@@ -36,9 +36,11 @@ const requestHandler = (request, response) => {
 
             request.on("data", (chunk) => {
                 body.push(chunk);
-
-                console.log(body);
                 
+            })
+
+            request.on("end", () =>{
+                console.log(body);
             })
         }
     response.end();
