@@ -22,9 +22,16 @@ const form = `
 
 const requestHandler = (request, response) => {
 
-        response.write(form)
+        const url = request.url;
+        const method = request.method;
+        const body = request.body;
     
-    
+        if(request.url === "/"){
+
+            response.write(form)
+
+            
+        }
     response.end();
     
 }
