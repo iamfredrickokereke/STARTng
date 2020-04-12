@@ -24,10 +24,11 @@ const requestHandler = (request, response) => {
 
         const url = request.url;
         const method = request.method;
-        const body = request.body;
+        
     
         if(url === "/"){
-            response.write(form)            
+            response.write(form);  
+            return response.end();       
         }
 
         if ( url === "/message" && method === "POST") {
