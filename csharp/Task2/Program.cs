@@ -25,22 +25,29 @@ namespace Task2
             System.Console.WriteLine("Enter an order number");
 
             int orderNumber = int.Parse(Console.ReadLine());
-            bool isThereFood = false;
+            bool isThereFruits = false;
             double price = 0;
 
             for (int index = 0; index < orders.Length; index++)
             {
+
+                 for (int i = 0; i < Fruits.Count; i++) // Loop through List with for
+            {
                 if (orderNumber == orders[index])
                 {
                     price = prices[index];
-                    isThereFood = true;
+                    isThereFruits = true;
+               
                     break;
                 }
             }
+                
+            }
 
 
-            if (isThereFood == true){
+            if (isThereFruits == true){
                 System.Console.WriteLine("The food is available, and the price is {0}", price.ToString("C"));
+                //System.Console.WriteLine("Your food is " + Fruits[i].ToString());
             }
             else{
                 System.Console.WriteLine("We are sorry, this food is finished");

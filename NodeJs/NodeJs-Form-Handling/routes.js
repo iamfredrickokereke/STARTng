@@ -1,9 +1,17 @@
 
+const form = `
+
+    <html>
+
+    </html>
+
+`
+
 
 const requestHandler = (request, response) => {
 
-    //console.log(request);
-    console.log(response);
+    
+    
     
     response.end();
     
