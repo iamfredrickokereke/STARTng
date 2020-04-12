@@ -10,7 +10,7 @@ const form = `
                 <title> Send us a Message</title>
             </head>
             <body>
-                <form action="/message" method="post">  
+                <form action="/message" method="POST">  
                     <input type="text" name="input-box" id="">
                     <input type="button" value="Send">
                 </form>
