@@ -47,8 +47,8 @@ const requestHandler = (request, response) => {
 
                const message = parsedBody.toString().split("=")[1]
 
-               const final = message.split("+");
-               console.log(final.join(" "));
+               const final = message.split("+").join(" ");
+               console.log(final);
                
             })
         }
