@@ -44,7 +44,11 @@ const requestHandler = (request, response) => {
                // console.log(body);
 
                const parsedBody = Buffer.concat(body)
-               console.log(parsedBody.toString().split("=")[1]);
+
+               const message = parsedBody.toString().split("=")[1]
+
+               const final = message.split("+");
+               console.log(final.join(" "));
                
             })
         }
