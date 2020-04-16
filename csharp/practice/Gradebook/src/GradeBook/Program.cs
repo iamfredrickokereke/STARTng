@@ -7,9 +7,15 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-            args[0] = "fred";
+        //    double [] numbers = new double [3];
 
-            Console.WriteLine($"Hello {args[0]}");
+            var numbers = new double[3];
+
+           numbers[0] = 1;
+           numbers[1] = 2;
+           numbers[2] = 3;
+
+           System.Console.WriteLine(numbers[1] + numbers[2]);
         }
     }
 }
