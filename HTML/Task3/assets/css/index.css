@@ -19,7 +19,10 @@ body{
 
 /* Aside section styles */
 
-
+aside{
+    width: 300px;
+    background-color: aqua;
+}
 
 
 /* Home section styles */
