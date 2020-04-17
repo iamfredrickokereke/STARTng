@@ -2,6 +2,17 @@
 
 
 /* General style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    
+    
+
+}
 ::before, ::after{
     box-sizing: border-box;
 }
@@ -10,21 +21,9 @@ body{
     margin: 0;
     line-height: 1.5;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    align-content: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-
-}
 .section{
     background-color: rgb(236, 200, 200);
-    /* color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
@@ -32,7 +31,7 @@ body{
 
 }
 
-.content{
+.main-content{
     padding-left: 270px;
 }
 
@@ -50,7 +49,7 @@ body{
 
 /* Aside section styles */
 
-aside{
+.aside{
     width: 270px;
     background-color: rgb(0, 0, 0);
     height: 100%;
@@ -64,12 +63,12 @@ aside{
     
 }
 
-aside .logo{
+.aside .logo{
     
     padding: 30px 0;
 }
 
-aside .logo a{
+.aside .logo a{
     font-size: 30px;
     color: seashell;
     font-family: 'Poppins', sans-serif;
@@ -82,7 +81,7 @@ aside .logo a{
     
 }
 
-aside .logo a::before{
+.aside .logo a::before{
     content: '';
     height: 20px;
     width: 20px;
@@ -94,7 +93,7 @@ aside .logo a::before{
     border-left: 4px solid red;
 }
 
-aside .logo a::after{
+.aside .logo a::after{
     content: '';
     height: 20px;
     width: 20px;
@@ -106,7 +105,7 @@ aside .logo a::after{
     border-right: 4px solid red;
 }
 
-aside .nav-toggler{
+.aside .nav-toggler{
     height: 40px;
     width: 40px;
     border: 1px solid rgb(122, 62, 62);
@@ -131,14 +130,14 @@ aside .nav-toggler{
     background-size: cover;
     
 } */
-aside .nav-toggler span{
+.aside .nav-toggler span{
     height: 2px;
     width: 16px;
     display: inline-block;
     position: relative;
 }
 
-aside .nav-toggler span::before{
+.aside .nav-toggler span::before{
     content: '';
     height: 2px;
     width: 18px;
@@ -147,7 +146,7 @@ aside .nav-toggler span::before{
     top: -6px;
     left: 0;
 }
-aside .nav-toggler span::after{
+.aside .nav-toggler span::after{
     content: '';
     height: 2px;
     width: 18px;
@@ -156,21 +155,21 @@ aside .nav-toggler span::after{
     top: -6px;
     left: 0;
 }
-aside .nav-toggler span{
+.aside .nav-toggler span{
     background-color: red;
 }
-aside .nav-toggler span, aside .nav-toggler span::before, aside .nav-toggler span::after {
+.aside .nav-toggler span, aside .nav-toggler span::before, aside .nav-toggler span::after {
     background-color: red;
 }
-aside nav{
+.aside nav{
     list-style: none;
     padding: 0;
     margin: 100px 0;
 }
-aside nav li {
+.aside nav li {
     display: block;
 }
-aside nav li a{
+.aside nav li a{
     display: block;
     font-size: 16px;
     color: seashell;
@@ -183,25 +182,25 @@ aside nav li a{
     text-transform: capitalize;
 
 }
-aside nav li a:hover{
+.aside nav li a:hover{
     padding-left: 5px;
     color: red;
 
 }
-aside nav li a.active{    
+.aside nav li a.active{    
     color: red;
 }
-aside nav li a:not(.active):hover{
+.aside nav li a:not(.active):hover{
     padding-left: 5px;
 }
 
-aside nav li a .fa{
+.aside nav li a .fa{
     margin-right: 10px;
 }
 
 
 
-aside .copyright-text{
+.aside .copyright-text{
     font-size: 9px;
     color: rgb(236, 200, 200);
 }
@@ -210,7 +209,7 @@ aside .copyright-text{
 
 
 .home{
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 .home .intro {
