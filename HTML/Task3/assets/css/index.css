@@ -46,7 +46,7 @@ aside .logo{
 }
 
 aside .logo a{
-    font-size: 40px;
+    font-size: 30px;
     color: seashell;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -54,6 +54,7 @@ aside .logo a{
     display: inline-block;    
     position: relative;
     padding: 0 10px;
+    line-height: 50px;
     
 }
 
