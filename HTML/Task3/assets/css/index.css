@@ -41,38 +41,44 @@ aside{
 }
 
 aside .logo{
-    background-color: rgb(122, 62, 62);
+    
     padding: 30px 0;
 }
 
 aside .logo a{
-    font-size: 45px;
+    font-size: 40px;
     color: seashell;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-decoration: none;
     display: inline-block;    
     position: relative;
+    padding: 0 10px;
+    
 }
 
 aside .logo a::before{
     content: '';
     height: 20px;
     width: 20px;
-    background-color: red;
+    
     position: absolute;
     top: 0;
     left: 0;
+    border-top: 4px solid red;
+    border-left: 4px solid red;
 }
 
 aside .logo a::after{
     content: '';
     height: 20px;
     width: 20px;
-    background-color: red;
+   
     position: absolute;
     bottom: 0;
     right: 0;
+    border-bottom: 4px solid red;
+    border-right: 4px solid red;
 }
 
 nav{
