@@ -262,3 +262,9 @@ aside .copyright-text{
     transition: all 0.3 ease-in-out;
 
 }
+
+.home .intro .social a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
