@@ -252,11 +252,13 @@ aside .copyright-text{
     height: 35px;
     width: 35px;
     display: inline-block;
-    line-height: 35;
+    line-height: 35px;
     text-align: center;
-    color: white;
+    color: rgb(44, 37, 37);
     margin: 0 4px;
     text-decoration: none;
     border-radius: 50%;
-    
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+
 }
