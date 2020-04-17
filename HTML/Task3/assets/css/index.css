@@ -247,3 +247,16 @@ aside .copyright-text{
 .home .intro .social{
     margin-top: 28px;
 }
+
+.home .intro .social a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    line-height: 35;
+    text-align: center;
+    color: white;
+    margin: 0 4px;
+    text-decoration: none;
+    border-radius: 50%;
+    
+}
