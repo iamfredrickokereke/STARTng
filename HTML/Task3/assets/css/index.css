@@ -27,7 +27,7 @@ body{
 /* Aside section styles */
 
 aside{
-    width: 200px;
+    width: 270px;
     background-color: rgb(0, 0, 0);
     height: 100%;
     position: fixed;
@@ -46,11 +46,33 @@ aside .logo{
 }
 
 aside .logo a{
-    display: inline-block;
+    font-size: 45px;
     color: seashell;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 30px;
     text-decoration: none;
+    display: inline-block;    
+    position: relative;
+}
+
+aside .logo a::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+aside .logo a::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 nav{
@@ -72,6 +94,6 @@ aside .copyright-text{
 }
 
 .content{
-    padding-left: 200px;
+    padding-left: 270px;
 }
 /* Home section styles */
