@@ -8,7 +8,7 @@ const yuGiOh = int => {
 	let arr = [];
 
 	// iterating over each value in chosen range
-	for (i = 1; i <= int; i++) {
+	for (let i = 1; i <= int; i++) {
 
 		// divisible by 2,3 & 5
 		if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
@@ -47,12 +47,5 @@ const yuGiOh = int => {
 	return arr;
 };
 
-// calling function with 100 as argument
+
 console.log(yuGiOh(10));
-//  yuGiOh(100);
-
-// calling function with 67 as argument
-// yuGiOh(67);
-
-// console.log(yuGiOh(67));
-
