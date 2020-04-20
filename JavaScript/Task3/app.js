@@ -1,5 +1,5 @@
-// declaring function
-const yuGiOh = int => {
+
+const yuGiOh = function(int) {
 
 	// changing parameter to Integer type 
 	Number.parseInt(int);
