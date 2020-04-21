@@ -8,91 +8,89 @@ namespace NumberGuessGame
         {
             
             Random randm = new Random();
-            var levels = "";
-            var wrongInputOutput = "";
+            var currentLevel = "";
+            var displayResult = "";
             int randomNumber;
             var guess = 0;
             var chances = 0;
             
 
-            System.Console.Write("Dear user, you have between Easy, Medium and Hard. PRESS 1 - Easy, 2 - Medium and 3 - Hard: ");
-            System.Console.WriteLine("Welcome!!!");
+            System.Console.Write("Dear user, you have between Easy, Medium and Hard. PRESS 1 - Easy, 2 - Medium and 3 - Hard... then Press ENTER : ");
+            // System.Console.Write("");
             int numberChosen = int.Parse(Console.ReadLine());
 
-            //SETTING LEVEL OF GAME
             if (numberChosen == 1)
             {
-                levels = "EASY";
+                currentLevel = "EASY";
             }
             else if (numberChosen == 2)
             {
-                levels = "MEDIUM";
+                currentLevel = "MEDIUM";
             }
             else if (numberChosen == 3)
             {
-                levels = "HARD";
+                currentLevel = "HARD";
             }
             else
             {
-                wrongInputOutput = "Wrong input, Start the game again...";
+                displayResult = "Wrong input, Start the game again...";
             }
 
-            //STARTING GAME BASED ON LEVEL
-            if (levels == "EASY")
+            if (currentLevel == "EASY")
             {
-                //CREATING RANDOM NUMBER
+                //RANDOM NUMBER
                 randomNumber = randm.Next(1,11);
                 chances = 6;
-
-                Console.WriteLine(playGame(1,10,chances,randomNumber,guess));
+                System.Console.WriteLine(playGame(1,10,chances,randomNumber,guess));
             }
-            else if (levels == "MEDIUM")
+            else if (currentLevel == "MEDIUM")
             {
                 randomNumber = randm.Next(1,21);
                 chances = 4;
-
-                Console.WriteLine(playGame(1,20,chances,randomNumber,guess));
+                System.Console.WriteLine(playGame(1,20,chances,randomNumber,guess));
             }
-            else if (levels == "HARD")
+            else if (currentLevel == "HARD")
             {
                 randomNumber = randm.Next(1,51);
                 chances = 3;
-
-                Console.WriteLine(playGame(1,50,chances,randomNumber,guess));
+                System.Console.WriteLine(playGame(1,50,chances,randomNumber,guess));
             }
-            Console.WriteLine(wrongInputOutput);            
+            Console.WriteLine(displayResult);            
         }
 
-        //Method that plays the game so that i don't repeat myself
-        private static string playGame(int minValue, int maxValue, int gameChance, int gameRandomNumber, int gameGuess) 
+        //Game method
+        private static string playGame(int minVal, int maxVal, int gameChance, int gameRandomNumber, int gameGuesses) 
         {
             string gameOutput = "";
-            while (gameGuess != gameRandomNumber)
+            while (gameGuesses != gameRandomNumber)
             {
                 if (gameChance > 1)
                 {
                     Console.WriteLine($"You have {gameChance} chances left.");
-                    Console.Write($"Guess the number between {minValue} and {maxValue}: ");
-                    gameGuess = int.Parse(Console.ReadLine());
+                    Console.Write($"Guess the number between {minVal} and {maxVal}: ");
+                    gameGuesses = int.Parse(Console.ReadLine());
                 }
                 else if (gameChance == 1)
                 {
-                    Console.WriteLine($"You have {gameChance} chance left.");
-                    Console.Write($"Guess the number between {minValue} and {maxValue}: ");
-                    gameGuess = int.Parse(Console.ReadLine());
+                    System.Console.WriteLine($"You have {gameChance} chance left.");
+                    System.Console.Write($"Guess the number between {minVal} and {maxVal}: ");
+                    gameGuesses = int.Parse(Console.ReadLine());
                 }
                         
 
-                if (gameGuess == gameRandomNumber && gameChance > 0)
+                if (gameGuesses == gameRandomNumber && gameChance > 0)
                 {
-                    gameOutput = $"You got it right. The random number was {gameRandomNumber}";
+                    gameOutput = $"Alas master, you got it. The random number is {gameRandomNumber}";
                     break;
                 }
 
                 if (gameChance == 1)
                 {
-                    gameOutput = "All attempts was wrong. Try again later";  
+                    gameOutput = "Oops, you are out of guesses. Please try again.";  
                     break;
+                }
+                else{
+                    System.Console.WriteLine("Wrong Entry...");
                 }
                 gameChance -= 1;
             }
