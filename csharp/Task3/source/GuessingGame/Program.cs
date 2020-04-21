@@ -6,15 +6,17 @@ namespace NumberGuessGame
     {
         static void Main(string[] args)
         {
-            //INITIALIZING VARIABLES
-            int randomNumber;
-            int guess = 0;
-            int chances = 0;
+            
             Random randm = new Random();
-            string levels = "";
-            string wrongInputOutput = "";
+            var levels = "";
+            var wrongInputOutput = "";
+            int randomNumber;
+            var guess = 0;
+            var chances = 0;
+            
 
-            Console.Write("Choose a Level Between Easy, Medium and Hard. 1 for Easy, 2 for Medium and 3 for Hard: ");
+            System.Console.Write("Dear user, you have between Easy, Medium and Hard. PRESS 1 - Easy, 2 - Medium and 3 - Hard: ");
+            System.Console.WriteLine("Welcome!!!");
             int numberChosen = int.Parse(Console.ReadLine());
 
             //SETTING LEVEL OF GAME
@@ -32,7 +34,7 @@ namespace NumberGuessGame
             }
             else
             {
-                wrongInputOutput = "Wrong input, Start game again, and put in the right input. Cheers";
+                wrongInputOutput = "Wrong input, Start the game again...";
             }
 
             //STARTING GAME BASED ON LEVEL
