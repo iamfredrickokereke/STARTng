@@ -17,17 +17,17 @@ namespace NumberGuessGame
 
             System.Console.Write("Dear user, you have between Easy, Medium and Hard. PRESS 1 - Easy, 2 - Medium and 3 - Hard... then Press ENTER : ");
             // System.Console.Write("");
-            int numberChosen = int.Parse(Console.ReadLine());
+            int userInput = int.Parse(Console.ReadLine());
 
-            if (numberChosen == 1)
+            if (userInput == 1)
             {
                 currentLevel = "EASY";
             }
-            else if (numberChosen == 2)
+            else if (userInput == 2)
             {
                 currentLevel = "MEDIUM";
             }
-            else if (numberChosen == 3)
+            else if (userInput == 3)
             {
                 currentLevel = "HARD";
             }
