@@ -1,0 +1,14 @@
+int num1 = 5, int num2 = 6; // declaring variables in a single line
+
+// single line comment
+
+/*    
+This is a multiline comment
+*/
+
+5 major datatypes
+ int => integer
+ double => Double   / works same as float/  and  decimal  but diff precisions
+ string => strings
+ bool => boolean
+ char => character
