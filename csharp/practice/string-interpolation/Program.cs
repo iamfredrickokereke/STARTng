@@ -59,15 +59,15 @@ namespace string_interpolation
         // System.Console.WriteLine(today);
         // System.Console.WriteLine((int)today);
 
-        var fnum = int.Parse(Console.ReadLine());
-        var snum = int.Parse(Console.ReadLine());
+        // var fnum = int.Parse(Console.ReadLine());
+        // var snum = int.Parse(Console.ReadLine());
 
-        var result = fnum + snum;
+        // var result = fnum + snum;
 
-        System.Console.WriteLine($"{fnum} + {snum} = {result}");
-        System.Console.WriteLine("{0} + {1} = {2}", fnum, snum, result);
-        System.Console.WriteLine("the result is " + result);
-        System.Console.WriteLine( fnum + snum + "the result is " + result);
+        // System.Console.WriteLine($"{fnum} + {snum} = {result}");
+        // System.Console.WriteLine("{0} + {1} = {2}", fnum, snum, result);
+        // System.Console.WriteLine("the result is " + result);
+        // System.Console.WriteLine( fnum + snum + "the result is " + result);
 
         // Increment/decrement operators
 
