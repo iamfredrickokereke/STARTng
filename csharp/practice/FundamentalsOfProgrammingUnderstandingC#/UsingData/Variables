@@ -21,3 +21,10 @@ decimal = 3.2;
 string name = "Fred kelly";
 bool isRich = true;
 char letter = 'a';
+
+displaying result ==>   using placeholders  = Console.WriteLine("i love {0}", "coding");
+
+                        using concatenation =  Console.WriteLine("i love " + "coding");
+
+                        using string interpolation = Console.WriteLine($"i love {"coding"}");
+
