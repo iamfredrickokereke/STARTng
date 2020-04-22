@@ -22,7 +22,8 @@ string name = "Fred kelly";
 bool isRich = true;
 char letter = 'a';
 
-displaying result ==>   using placeholders  = Console.WriteLine("i love {0}", "coding");
+displaying result ==>   using placeholders  = Console.WriteLine("i love {0}", "coding");  // {0, 5} => take up 5 spaces 
+                                with negative we align left.
 
                         using concatenation =  Console.WriteLine("i love " + "coding");
 
