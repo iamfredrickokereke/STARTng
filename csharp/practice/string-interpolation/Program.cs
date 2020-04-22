@@ -37,7 +37,7 @@ namespace string_interpolation
 
         string b = "hello";
 
-
+        b.Substring(0,)
 
         System.Console.WriteLine(b);
 
