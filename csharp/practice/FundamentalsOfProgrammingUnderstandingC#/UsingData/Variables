@@ -12,3 +12,12 @@ This is a multiline comment
  string => strings
  bool => boolean
  char => character
+
+
+ integer x = 9;
+double = 2.2;
+float 4.5;
+decimal = 3.2;
+string name = "Fred kelly";
+bool isRich = true;
+char letter = 'a';
