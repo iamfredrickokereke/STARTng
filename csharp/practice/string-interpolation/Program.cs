@@ -57,6 +57,7 @@ namespace string_interpolation
         DayOfWeek today = DayOfWeek.Friday;
 
         System.Console.WriteLine(today);
+        System.Console.WriteLine((int)today);
 
         }
     }
