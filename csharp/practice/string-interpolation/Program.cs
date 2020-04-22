@@ -54,10 +54,17 @@ namespace string_interpolation
 
 
 
-        DayOfWeek today = DayOfWeek.Friday;
+        // DayOfWeek today = DayOfWeek.Friday;
 
-        System.Console.WriteLine(today);
-        System.Console.WriteLine((int)today);
+        // System.Console.WriteLine(today);
+        // System.Console.WriteLine((int)today);
+
+        var fnum = int.Parse(Console.ReadLine());
+        var snum = int.Parse(Console.ReadLine());
+
+
+        
+        
 
         }
     }
