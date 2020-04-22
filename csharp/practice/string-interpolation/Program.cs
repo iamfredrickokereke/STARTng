@@ -66,6 +66,7 @@ namespace string_interpolation
 
         System.Console.WriteLine($"{fnum} + {snum} = {result}");
         System.Console.WriteLine("{0} + {1} = {2}", fnum, snum, result);
+        System.Console.WriteLine("the result is " + result);
 
         // Increment/decrement operators
 
