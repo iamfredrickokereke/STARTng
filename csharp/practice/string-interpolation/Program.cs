@@ -4,6 +4,15 @@ namespace string_interpolation
 {
     class Program
     {
+
+        enum DaysOfTheWeek{
+            monday,
+            tuesday,
+            wednesday,
+            thursday,
+            friday
+        }
+
         static void Main(string[] args)
         {
         //    string afriend = "Belrah";
@@ -35,13 +44,19 @@ namespace string_interpolation
         // double y = 10;
         // int x = (int)y;
 
-        string b = "hello";
+        // string b = "hello";
 
-         b.Substring(0,2);
-        b.StartsWith("h"); // returns a bool of true or false
-        b.EndsWith("o"); // returns bool
+        //  b.Substring(0,2);
+        // b.StartsWith("h"); // returns a bool of true or false
+        // b.EndsWith("o"); // returns bool
 
-        System.Console.WriteLine(b);
+        // System.Console.WriteLine(b);
+
+
+
+        DayOfWeek today = DayOfWeek.Friday;
+
+        System.Console.WriteLine(today);
 
         }
     }
