@@ -27,6 +27,8 @@ namespace ClassesandObjects
             bool isbox1Square = isShapeSquare(box1);
             bool isbox2Square = isShapeSquare(box2);
 
+            System.Console.WriteLine(isbox1Square);
+            System.Console.WriteLine(isbox2Square);
 
             Student student1 = new Student();
             
