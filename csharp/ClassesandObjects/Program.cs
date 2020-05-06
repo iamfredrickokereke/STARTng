@@ -27,8 +27,13 @@ namespace ClassesandObjects
             bool isbox1Square = isShapeSquare(box1);
             bool isbox2Square = isShapeSquare(box2);
 
+
+            bool isInSamePositions = isInSamePosition(box1, box2);
+
+
             System.Console.WriteLine(isbox1Square);
             System.Console.WriteLine(isbox2Square);
+            System.Console.WriteLine(isInSamePositions);
 
             Student student1 = new Student();
             
@@ -62,6 +67,16 @@ namespace ClassesandObjects
             {
                 return true;
             } else
+            {
+                return false;
+            }
+        }
+
+        static bool isInSamePosition(Box b1, Box b2){
+            if (b1.Xposition == b2.Xposition && b1.Yposition == b2.Yposition)
+            {
+                return true;
+            }else
             {
                 return false;
             }
