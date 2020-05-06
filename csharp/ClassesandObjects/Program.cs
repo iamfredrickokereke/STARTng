@@ -24,6 +24,8 @@ namespace ClassesandObjects
 
 
 
+            bool isbox1Square = isShapeSquare(box1);
+            bool isbox2Square = isShapeSquare(box2);
 
 
             Student student1 = new Student();
