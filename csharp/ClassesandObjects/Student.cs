@@ -6,6 +6,6 @@ namespace ClassesandObjects
 
         public string Course {get; set;}
 
-        public integer Score {get; set;}
+        public int Score {get; set;}
     }
 }
