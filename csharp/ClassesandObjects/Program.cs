@@ -10,15 +10,26 @@ namespace ClassesandObjects
             
             student1.Name = "Fredrick";
             student1.Score = 99;
+            student1.CGPA = 5.0;
 
             Student student2 = new Student();
-            
+
             student2.Name = "Chinedu";
             student2.Score = 89;
+            student2.CGPA = 4.0;
 
 
 
-            Console.WriteLine("Hello World!" + " my name is " + student1.Name + " and i scored " + student1.Score);
+            if (student1.CGPA > student2.CGPA)
+            {                
+                 Console.WriteLine(" my name is " + student1.Name + " and i have the highest CGPA of " + student1.CGPA);                
+            }
+            else
+            {
+                 Console.WriteLine(" my name is " + student1.Name + " and i have the highest CGPA of " + student1.CGPA);
+            }
+
+
         }
     }
 }
