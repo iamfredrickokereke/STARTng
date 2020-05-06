@@ -7,5 +7,6 @@ namespace ClassesandObjects
         public string Course {get; set;}
 
         public int Score {get; set;}
+        public float CGPA {get; set;}
     }
 }
