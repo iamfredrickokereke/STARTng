@@ -13,6 +13,9 @@ namespace string_interpolation
             friday
         }
 
+        enum price{
+            squarefoot = 50
+        }
         static void Main(string[] args)
         {
         //    string afriend = "Belrah";
@@ -76,6 +79,19 @@ namespace string_interpolation
         
         //create enum
       // then fix
+
+    //   var length = int.Parse(Console.ReadLine());
+    //   var width = int.Parse(Console.ReadLine());
+
+    //   price perPrice = price.squarefoot;
+    //   var cost = length * width * (int)perPrice;
+
+    //   System.Console.WriteLine("The cost is : " + cost);
+
+    System.Console.WriteLine("Enter your time in mins only: ");
+    var enter_minutes = Console.ReadLine();
+    
+    System.Console.WriteLine(enter_minutes);
 
         }
     }
