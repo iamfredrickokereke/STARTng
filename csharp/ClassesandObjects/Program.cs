@@ -16,11 +16,15 @@ namespace ClassesandObjects
             
 
             Box box2 = new Box();
-            box2.Xposition = 0;
-            box2.Yposition = 0;
+            box2.Xposition = 5;
+            box2.Yposition = 10;
             box2.Height = 100;
-            box2.Width = 100;
+            box2.Width = 200;
             box2.Color = "black";
+
+
+
+
 
             Student student1 = new Student();
             
@@ -47,6 +51,16 @@ namespace ClassesandObjects
 
 
 
+        }
+
+        static bool isShapeSquare(Box b){
+            if (b.Width == b.Height)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
     }
 }
