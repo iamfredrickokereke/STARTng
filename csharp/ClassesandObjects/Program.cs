@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Drawing;
+using System;
 
 namespace ClassesandObjects
 {
@@ -6,6 +7,21 @@ namespace ClassesandObjects
     {
         static void Main(string[] args)
         {
+            Box box1 = new Box();
+            box1.Xposition = 0;
+            box1.Yposition = 0;
+            box1.Height = 100;
+            box1.Width = 100;
+            box1.Color = "Red";
+            
+
+            Box box2 = new Box();
+            box2.Xposition = 0;
+            box2.Yposition = 0;
+            box2.Height = 100;
+            box2.Width = 100;
+            box2.Color = "black";
+
             Student student1 = new Student();
             
             student1.Name = "Fredrick";
@@ -28,6 +44,7 @@ namespace ClassesandObjects
             {
                  Console.WriteLine(" my name is " + student1.Name + " and i have the highest CGPA of " + student1.CGPA);
             }
+
 
 
         }

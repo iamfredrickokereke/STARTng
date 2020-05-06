@@ -1,6 +1,6 @@
-namespace CLASSESANDOBJECTS
+namespace ClassesandObjects
 {
-    public class Rectangle
+    public class Box
     {
         public double Height {get; set;}
         public double Width {get; set;}
