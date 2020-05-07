@@ -6,13 +6,13 @@ namespace WebCalculator.Controllers
     public class CalculatorController : Controller
     {
         [HttpGet]
-        public ActionResult Sqrt()
+        public ActionResult Compute()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Sqrt(string firstNumber, string secondNumber)
+        public ActionResult Compute(string firstNumber, string secondNumber)
         {
             
                 try
