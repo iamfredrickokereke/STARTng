@@ -17,13 +17,9 @@ namespace WebCalculator.Controllers
 
                 try
                 {
-                    ViewBag.ErrorMessageValue = "";
+                    // ViewBag.ErrorMessageValue = "";
 
-                    if (firstNumber.Trim() == null && secondNumber.Trim() == null)
-                    {
-                        ViewBag.ErrorMessageValue = "Kindly enter a number";
-
-                    }else if (int.Parse(firstNumber) < 0 && int.Parse(secondNumber) < 0)
+                    if (int.Parse(firstNumber) < 0 && int.Parse(secondNumber) < 0)
                     {
                         ViewBag.ErrorMessageValue = "Please insert a positive number!";
 
