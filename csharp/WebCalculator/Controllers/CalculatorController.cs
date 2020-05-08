@@ -5,7 +5,7 @@ namespace WebCalculator.Controllers
 {
     public class CalculatorController : Controller
     {
-        [HttpGet]
+        // [HttpGet] defaultly uses a http get method
         public ActionResult Compute()
         {
             return View();
@@ -14,44 +14,49 @@ namespace WebCalculator.Controllers
         [HttpPost]
         public ActionResult Compute(string firstNumber, string secondNumber)
         {
-            
+
                 try
                 {
-                    // Checking if Negative Number was inserted and Parsing Error Message to User
-                    if (Convert.ToInt32(firstNumber) < 0 || Convert.ToInt32(secondNumber) < 0)
-                    {
-                        string ErrorMessage = "Please insert a positive number!!";
+                    ViewBag.ErrorMessageValue = "";
 
-                        ViewBag.ErrorMessageValue = ErrorMessage;
-                    }
-                    else
+                    if (firstNumber.Trim() == null && secondNumber.Trim() == null)
                     {
-                        //making Calculations
-                        int numberOne = int.Parse(firstNumber);
-                        int numberTwo = int.Parse(secondNumber);
-                        double firstSqrt = Math.Sqrt(numberOne);
-                        double secondSqrt = Math.Sqrt(numberTwo);
-                        double highestSqrt = 0;
+                        ViewBag.ErrorMessageValue = "Kindly enter a number";
+
+                    }else if (int.Parse(firstNumber) < 0 && int.Parse(secondNumber) < 0)
+                    {
+                        ViewBag.ErrorMessageValue = "Please insert a positive number!";
+
+                    }else 
+                    {
+                        var num1 = double.Parse(firstNumber);
+                        var num2 = double.Parse(secondNumber);
+                        var firstSqrt = Math.Sqrt(num1);
+                        var secondSqrt = Math.Sqrt(num2);
+                        double highSqrt;
+
                         if (firstSqrt > secondSqrt)
                         {
-                            highestSqrt = firstSqrt;
+                            highSqrt = firstSqrt;
                         }
                         else
                         {
-                            highestSqrt = secondSqrt;
+                            highSqrt = secondSqrt;
                         }
-                        ViewBag.Result = highestSqrt;
-                        ViewBag.numberOneValue = numberOne;
-                        ViewBag.numberTwoValue = numberTwo;
+                        ViewBag.Result = highSqrt;
+                        ViewBag.numberOneValue = num1;
+                        ViewBag.numberTwoValue = num2;
                         ViewBag.firstSqrtValue = firstSqrt;                    
                         ViewBag.secondSqrtValue = secondSqrt;
+                    
                     }
+                    
                 }
                 catch (FormatException ex)
                 {
                     // Handling FormatExceptions and parsing message to User
                     var exceptionValue = ex.Message;
-                    ViewBag.FormatError = "Please Insert a number instead. " + exceptionValue;
+                    ViewBag.FormatError = "Hi Buddy, Only Numbers are accepted " + exceptionValue;
                 }
             
             return View();
