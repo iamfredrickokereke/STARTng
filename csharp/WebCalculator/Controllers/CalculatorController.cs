@@ -53,6 +53,11 @@ namespace WebCalculator.Controllers
                     var exceptionValue = ex.Message;
                     ViewBag.FormatError = "Hi Buddy, Only Numbers are accepted " + exceptionValue;
                 }
+                catch (ArgumentNullException ex)
+                {
+                    var exceptionValueNullException = ex.Message;
+                    ViewBag.FormatErrorNullException = "Please Insert a Value and try again";
+                }
             
             return View();
         }
