@@ -43,10 +43,9 @@ namespace WebCalculator.Controllers
                         {
                             highSqrt = secondSqrt;
                         }
-                        ViewBag.Result = highSqrt;
-                        ViewBag.numberOneValue = num1;
-                        ViewBag.numberTwoValue = num2;
-                        ViewBag.firstSqrtValue = firstSqrt;                    
+                        //store values
+                        ViewBag.Result = highSqrt; ViewBag.numberOneValue = num1;
+                        ViewBag.numberTwoValue = num2; ViewBag.firstSqrtValue = firstSqrt;                    
                         ViewBag.secondSqrtValue = secondSqrt;
                     
                     }
